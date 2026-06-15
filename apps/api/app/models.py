@@ -46,6 +46,7 @@ class IntakeSource(str, Enum):
     upload = "upload"
     listing_url = "listing_url"
     drive_url = "drive_url"
+    address = "address"          # HomeHarvest: scrape realtor.com by address
 
 
 # ── Domain models ──────────────────────────────────────────────────────────

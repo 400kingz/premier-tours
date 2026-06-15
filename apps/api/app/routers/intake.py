@@ -10,6 +10,7 @@ from app.routers.deps import get_db, get_store
 from app.services.intake_sources import (
     IntakeError,
     fetch_photos_from_url,
+    fetch_photos_via_address,
     save_uploaded_photo,
 )
 from app.services.storage import MediaStore
@@ -40,10 +41,16 @@ async def create_tour(req: IntakeRequest, db: TourDB = Depends(get_db)) -> Tour:
     )
     await db.create_tour(tour)
 
-    # Zero-touch path: pull photos from the listing / Drive URL immediately.
+    # Zero-touch path: pull photos from a listing/Drive URL or street address.
+    fetch = None
     if req.source in (IntakeSource.listing_url, IntakeSource.drive_url) and req.source_url:
+        fetch = fetch_photos_from_url(str(req.source_url), tour.id)
+    elif req.source == IntakeSource.address:
+        fetch = fetch_photos_via_address(req.address, tour.id)
+
+    if fetch is not None:
         try:
-            photos = await fetch_photos_from_url(str(req.source_url), tour.id)
+            photos = await fetch
         except IntakeError as e:
             await db.update_tour(tour.id, status=TourStatus.failed.value)
             raise HTTPException(422, str(e)) from None
