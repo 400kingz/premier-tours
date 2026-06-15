@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Premier Home Tours · Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#0a0a0c; --bg2:#101015; --card:#14141b; --line:rgba(255,255,255,.07);
+  --line2:rgba(255,255,255,.12); --text:#f0ece4; --muted:#9a958c; --faint:#615d56;
+  --gold:#d9a86c; --gold2:#caa56e; --pos:#56c596; --neg:#e8697d;
+  --serif:'Fraunces',Georgia,serif; --sans:'Inter',-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+.glow{position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(900px 480px at 50% -10%,rgba(217,168,108,.13),transparent 60%),
+  radial-gradient(700px 600px at 90% 110%,rgba(86,197,150,.05),transparent 60%)}
+.wrap{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:34px 30px 60px}
+header{display:flex;align-items:center;justify-content:space-between;margin-bottom:34px}
+.brand h1{font-family:var(--serif);font-weight:500;font-size:24px;letter-spacing:.01em}
+.brand .t{font-size:12.5px;color:var(--muted);margin-top:2px}
+.badge{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);
+  border:1px solid rgba(217,168,108,.35);border-radius:999px;padding:5px 12px;background:rgba(217,168,108,.08)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;margin-bottom:20px}
+h2{font-family:var(--serif);font-weight:500;font-size:19px;margin-bottom:4px}
+.sub{font-size:13px;color:var(--muted);margin-bottom:20px}
+.drop{border:1.5px dashed var(--line2);border-radius:14px;padding:42px 20px;text-align:center;
+  cursor:pointer;transition:.18s;background:rgba(255,255,255,.015)}
+.drop:hover,.drop.over{border-color:var(--gold);background:rgba(217,168,108,.06)}
+.drop .ico{font-size:30px;margin-bottom:10px;opacity:.8}
+.drop .big{font-size:15px;font-weight:500}
+.drop .small{font-size:12.5px;color:var(--faint);margin-top:5px}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(76px,1fr));gap:8px;margin-top:16px}
+.thumbs img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+.row{display:flex;gap:14px;margin-top:18px;flex-wrap:wrap}
+.field{flex:1;min-width:200px}
+label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:7px}
+input,select{width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:10px;
+  color:var(--text);padding:11px 13px;font-size:14px;font-family:inherit}
+input:focus,select:focus{outline:none;border-color:var(--gold)}
+.btn{font-family:inherit;font-weight:600;font-size:14px;border:none;border-radius:11px;padding:13px 22px;
+  cursor:pointer;transition:.15s;background:linear-gradient(180deg,var(--gold),var(--gold2));color:#1a1408}
+.btn:hover{filter:brightness(1.07)}.btn:disabled{opacity:.4;cursor:not-allowed;filter:none}
+.btn.ghost{background:transparent;border:1px solid var(--line2);color:var(--text)}
+.pill{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:999px;border:1px solid var(--line2)}
+.pill.ready{color:var(--gold);border-color:rgba(217,168,108,.4);background:rgba(217,168,108,.1)}
+.pill.work{color:#7fb3ff;border-color:rgba(127,179,255,.4);background:rgba(127,179,255,.1)}
+.pill.done{color:var(--pos);border-color:rgba(86,197,150,.4);background:rgba(86,197,150,.1)}
+.pill.error{color:var(--neg);border-color:rgba(232,105,125,.4);background:rgba(232,105,125,.1)}
+.stage{font-size:13.5px;color:var(--muted);margin-top:10px}
+.shotlist{margin-top:18px;display:flex;flex-direction:column;gap:10px}
+.shot{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.shot .h{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px}
+.shot .rooms{font-family:var(--serif);font-size:15px}
+.shot .prompt{font-size:12px;color:var(--faint);margin-top:7px;line-height:1.5}
+.shot .st{font-size:11px;font-family:var(--sans)}
+.bar{height:7px;background:var(--bg2);border-radius:999px;overflow:hidden;margin-top:6px;border:1px solid var(--line)}
+.bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--gold2),var(--gold));transition:width .4s}
+.stats{display:flex;gap:26px;margin-top:18px;flex-wrap:wrap}
+.stat .k{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted)}
+.stat .v{font-family:var(--serif);font-size:22px;margin-top:4px}
+video{width:100%;border-radius:14px;border:1px solid var(--line);background:#000;margin-top:8px}
+.tabs{display:flex;gap:8px;margin-bottom:12px}
+.tab{font-size:13px;padding:8px 16px;border-radius:9px;border:1px solid var(--line2);background:transparent;color:var(--muted);cursor:pointer}
+.tab.on{color:#1a1408;background:var(--gold);border-color:var(--gold);font-weight:600}
+.hidden{display:none}
+.note{font-size:12px;color:var(--faint);margin-top:14px;line-height:1.6}
+.agent-cta{margin-top:16px;padding:14px 16px;border:1px solid rgba(217,168,108,.3);
+  background:rgba(217,168,108,.06);border-radius:12px;font-size:13px;color:var(--text)}
+.dl{font-size:12.5px;color:var(--gold);text-decoration:none;margin-right:18px}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<div class="wrap">
+  <header>
+    <div class="brand"><h1>Premier&nbsp;Home&nbsp;Tours</h1><div class="t">Cinematic AI drone flythroughs from listing photos</div></div>
+    <span class="badge">MVP Studio</span>
+  </header>
+
+  <!-- UPLOAD -->
+  <section class="card" id="upload-card">
+    <h2>New Tour</h2>
+    <div class="sub">Drop a property's photos — we sequence them into one continuous FPV flythrough.</div>
+    <div class="drop" id="drop">
+      <div class="ico">⬆</div>
+      <div class="big">Drop listing photos here</div>
+      <div class="small">or click to browse · JPG / PNG / WEBP · 6+ recommended</div>
+      <input type="file" id="file" accept="image/*" multiple hidden />
+    </div>
+    <div class="thumbs" id="thumbs"></div>
+    <div class="row">
+      <div class="field"><label>Listing address</label><input id="address" placeholder="123 Prospect Ave" /></div>
+      <div class="field" style="max-width:180px"><label>Rooms / shot</label>
+        <select id="rps"><option>2</option><option selected>3</option><option>4</option></select></div>
+      <div class="field" style="max-width:170px;display:flex;align-items:flex-end">
+        <button class="btn" id="plan-btn" disabled style="width:100%">Plan Tour →</button></div>
+    </div>
+    <div class="note">Planning runs Stage 0-2 (normalize · classify · author) with zero video spend. You'll see the shot list and estimated cost before any generation.</div>
+  </section>
+
+  <!-- JOB -->
+  <section class="card hidden" id="job-card">
+    <div style="display:flex;align-items:center;justify-content:space-between">
+      <h2 id="job-title">Tour</h2><span class="pill" id="job-pill">—</span>
+    </div>
+    <div class="stage" id="job-stage">…</div>
+
+    <div class="stats" id="job-stats"></div>
+    <div class="shotlist" id="shotlist"></div>
+
+    <div class="agent-cta hidden" id="agent-cta"></div>
+
+    <div id="finish-row" class="row hidden">
+      <button class="btn" id="finish-btn" style="min-width:200px">Stitch Final Tour →</button>
+    </div>
+
+    <div id="result" class="hidden" style="margin-top:22px">
+      <div class="tabs"><button class="tab on" data-v="master">16:9 Master</button><button class="tab" data-v="reel">9:16 Reel</button></div>
+      <video id="player" controls></video>
+      <div style="margin-top:12px"><a class="dl" id="dl-master" download>↓ Download master</a><a class="dl" id="dl-reel" download>↓ Download reel</a></div>
+    </div>
+  </section>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+{
+  "camera_vocabulary": {
+    "front_exterior": {
+      "move": "forward dolly approaching the front exterior of the house",
+      "speed": "medium",
+      "prompt_fragment": "A drone shot, forward dolly approaching the front exterior of the house. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "entryway": {
+      "move": "forward dolly through the open front door into the entryway, then a slow lateral pan to reveal the space",
+      "speed": "medium",
+      "prompt_fragment": "A drone shot, forward dolly through the open front door into the entryway, then a slow lateral pan to reveal the space. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "kitchen": {
+      "move": "forward dolly into the kitchen, then a slow lateral truck around the kitchen island",
+      "speed": "slow",
+      "prompt_fragment": "A drone shot, forward dolly into the kitchen, then a slow lateral truck around the kitchen island. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "dining_room": {
+      "move": "forward dolly into the dining room, then a slow orbit around the dining table",
+      "speed": "slow",
+      "prompt_fragment": "A drone shot, forward dolly into the dining room, then a slow orbit around the dining table. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "living_room": {
+      "move": "forward dolly into the living room, then a slow lateral truck to reveal the seating area and fireplace",
+      "speed": "slow",
+      "prompt_fragment": "A drone shot, forward dolly into the living room, then a slow lateral truck to reveal the seating area and fireplace. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "primary_bedroom": {
+      "move": "forward dolly into the primary bedroom, then a slow orbit around the bed",
+      "speed": "medium",
+      "prompt_fragment": "A drone shot, forward dolly into the primary bedroom, then a slow orbit around the bed. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "bathroom": {
+      "move": "forward dolly into the bathroom, then a slow orbit around the tub and vanity",
+      "speed": "slow",
+      "prompt_fragment": "A drone shot, forward dolly into the bathroom, then a slow orbit around the tub and vanity. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "bedroom": {
+      "move": "forward dolly into the bedroom, then a slow orbit around the bed",
+      "speed": "medium",
+      "prompt_fragment": "A drone shot, forward dolly into the bedroom, then a slow orbit around the bed. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "patio": {
+      "move": "forward dolly through glass doors onto the patio, then a slow lateral truck along the railing",
+      "speed": "medium",
+      "prompt_fragment": "A drone shot, forward dolly through glass doors onto the patio, then a slow lateral truck along the railing. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "backyard": {
+      "move": "drone flies backward and downward, revealing the backyard and pool area",
+      "speed": "medium",
+      "prompt_fragment": "A drone shot, drone flies backward and downward, revealing the backyard and pool area. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "office": {
+      "move": "forward dolly into the office, then a slow lateral pan to reveal the workspace",
+      "speed": "medium",
+      "prompt_fragment": "A drone shot, forward dolly into the office, then a slow lateral pan to reveal the workspace. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "hallway": {
+      "move": "forward dolly along the hallway",
+      "speed": "medium",
+      "prompt_fragment": "A drone shot, forward dolly along the hallway. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "warehouse": {
+      "move": "forward dolly through the vast warehouse space",
+      "speed": "medium",
+      "prompt_fragment": "A drone shot, forward dolly through the vast warehouse space. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "fitness_center": {
+      "move": "forward dolly into the fitness center, then a slow lateral pan to reveal the equipment",
+      "speed": "slow",
+      "prompt_fragment": "A drone shot, forward dolly into the fitness center, then a slow lateral pan to reveal the equipment. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "locker_room": {
+      "move": "forward dolly into the locker room, then a slow lateral pan to reveal the amenities",
+      "speed": "slow",
+      "prompt_fragment": "A drone shot, forward dolly into the locker room, then a slow lateral pan to reveal the amenities. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "training_center": {
+      "move": "forward dolly into the training center, then a slow lateral pan to reveal the room setup",
+      "speed": "slow",
+      "prompt_fragment": "A drone shot, forward dolly into the training center, then a slow lateral pan to reveal the room setup. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "board_room": {
+      "move": "forward dolly into the board room, then a slow lateral pan to reveal the meeting setup",
+      "speed": "slow",
+      "prompt_fragment": "A drone shot, forward dolly into the board room, then a slow lateral pan to reveal the meeting setup. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "laundry_room": {
+      "move": "forward dolly into the laundry room, then a slow lateral pan to reveal the appliances",
+      "speed": "medium",
+      "prompt_fragment": "A drone shot, forward dolly into the laundry room, then a slow lateral pan to reveal the appliances. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "recreation_room": {
+      "move": "forward dolly into the recreation room, then a slow lateral pan to reveal the entertainment area",
+      "speed": "medium",
+      "prompt_fragment": "A drone shot, forward dolly into the recreation room, then a slow lateral pan to reveal the entertainment area. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "wine_cellar": {
+      "move": "forward dolly into the wine cellar, then a slow orbit around the wine racks",
+      "speed": "medium",
+      "prompt_fragment": "A drone shot, forward dolly into the wine cellar, then a slow orbit around the wine racks. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    },
+    "gym": {
+      "move": "forward dolly into the gym area, then a slow lateral pan to reveal the equipment",
+      "speed": "medium",
+      "prompt_fragment": "A drone shot, forward dolly into the gym area, then a slow lateral pan to reveal the equipment. Constant speed, steady gimbal, no rotation or warping, no people, no text."
+    }
+  },
+  "pacing": {
+    "seconds_per_room": 8,
+    "total_target_seconds": 120
+  },
+  "transition_style": "Seamless, continuous FPV-style flythroughs, utilizing frame-matched doorway passes for smooth transitions between interior rooms. Hard cuts are reserved for major scene changes, such as transitioning from exterior to interior, or between distinct floors/areas when a continuous path is not feasible.",
+  "color_grade": "Bright, natural, and clean with good contrast, avoiding oversaturation.",
+  "global_do": [
+    "Maintain continuous, smooth, and flowing FPV-style camera movements, simulating a single drone take.",
+    "Utilize forward/backward dollies, lateral trucks, and shallow orbits to showcase rooms from multiple angles, prioritizing lateral parallax.",
+    "Employ frame-matched doorway passes for seamless transitions between interior rooms.",
+    "Vary camera height slightly to emphasize architectural features (e.g., grand staircase) and maintain a natural, eye-level perspective in interiors.",
+    "Keep subjects centered or in the rule-of-thirds during pans and orbits.",
+    "Ensure good, even lighting, highlighting natural light and avoiding harsh shadows or overexposure.",
+    "Showcase key architectural features, large windows, and unique structures with deliberate camera moves.",
+    "Include establishing and concluding aerial drone shots for exterior context and a comprehensive overview.",
+    "Maintain a consistent, bright, natural, and clean color grade with good contrast.",
+    "Ensure constant speed, steady gimbal, and no rotation or warping."
+  ],
+  "global_dont": [
+    "Avoid hard cuts or abrupt transitions within continuous flythrough segments; prioritize seamless, frame-matched doorway passes.",
+    "Do not use shaky, jerky, erratic, or unstable camera movements.",
+    "Avoid overly fast or slow movements that feel unnatural or disorienting; maintain a consistent, engaging pace.",
+    "Do not use extreme wide-angle distortion that makes rooms look unnatural or fish-eyed.",
+    "Do not introduce external elements such as people, text overlays, music, or distracting clutter.",
+    "Avoid excessive camera height changes or extreme angles that disorient the viewer.",
+    "Do not over-saturate colors, apply overly stylized filters, or use artificial/dark lighting.",
+    "Do not linger too long on any single feature or area; maintain continuous motion.",
+    "No rotation or warping of the image."
+  ],
+  "sources": [
+    "https://www.youtube.com/watch?v=8jsXi_51B40",
+    "https://www.youtube.com/watch?v=VtVD5m72hog",
+    "https://www.youtube.com/watch?v=AWovHEZcpQU",
+    "https://www.youtube.com/watch?v=rLLuXs-PKKU",
+    "https://www.youtube.com/watch?v=NS2Vm-mggWo",
+    "https://www.youtube.com/watch?v=SMtdpUI-eZc",
+    "https://www.youtube.com/watch?v=tx65BwFzBRw",
+    "https://www.youtube.com/watch?v=Aq4_R-Tbhcc",
+    "https://www.youtube.com/watch?v=dnY44UHEL4s"
+  ],
+  "n_videos": 9
+}
